@@ -1,0 +1,258 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Lato', 'Noto Sans Japanese' 'メイリオ', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align:left;
+}
+
+/* about header ================================ */
+header {
+  height: 65px;
+  width: 100%;
+  background-color: grey;
+  // background-color: #bdc3c7;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  margin-top: 6px;
+}
+
+.header-left {
+  float: left;
+  width: 50%;
+  color: white;
+  h1{
+    line-height: 65px;
+    padding: 0 25px;
+  }
+  a {
+    font-size: 21px;
+    font-weight: bold;
+    color: inherit;
+    line-height: 65px;
+    padding: 0 25px;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  a.header-link {
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+}
+
+.header-right {
+  line-height: 65px;
+  float: right;
+  width: 50%;
+}
+
+.search-form-res {
+  margin-top: 4.5px;
+  width: 100%;
+  display: inline-block;
+  form{
+    width: 100%;
+    display: flex;
+    input{
+      color:grey;
+      font-size: 21px;
+      font-weight: bold;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    input.search-result{
+      color:white;
+    }
+  }
+  .search-result{
+    background-color: #D5D5D5;
+  }
+}
+
+
+
+/* about title ================================ */
+
+.container-title{
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align:left;
+}
+
+.top-wrapper  h1{
+  font-size:  110px;
+  text-align: center;
+  margin-top:20%;
+}
+
+.letter-color1{
+  color: $blue;
+}
+.letter-color2{
+  color: $purpule;
+}
+.letter-color3{
+  color: $pink;
+}
+
+
+/* about seach-form(TOPPAGE) ================================ */
+
+.search-form {
+  width: 88%;
+  margin:auto;
+  display: table;
+  box-shadow: 1px 2px 6px rgba(106, 137, 152, 0.3);
+}
+
+.form-div{
+  display: table-cell;
+  vertical-align: upper;
+  text-align: center;
+}
+
+
+// input, button, textarea, select
+input {
+	margin-top: 1em;
+	padding: .5em;
+	border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 19px
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+input[type="text"],
+textarea {
+  width: 87%;
+  margin : 5px 0 5px 5px;
+  padding: 9px 0 9px 9px;
+  outline: none;
+  border-style: none;
+  // border: 1px solid #F1F1F1;
+  // background-color: #F1F1F1;
+}
+// submit button
+input[type="submit"]{
+  margin : 5px 5px 5px 0;
+  padding: 9px 9px 9px 9px;
+}
+.search-p{
+  font-size:21px;
+}
+
+
+/* about ================================ */
+
+.about-main {
+  padding: 180px 8% 0;
+  color:black;
+  text-align: left;
+  h1 {
+    font-size: 84px;
+    line-height: 1.4;
+  }
+  p {
+   font-weight: 200;
+   font-size: 22px;
+ }
+ a {
+   color: inherit;
+ }
+}
+
+.container-about{
+  margin: 0 auto;
+  .about-images{
+    padding-top: 80px;
+    margin: 0 auto;
+
+    .about-image {
+      float: left;
+      text-align: center;
+      width: 50%;
+      margin-top: 20px;
+      margin-bottom:  20px;
+
+      img {
+        height: 40%;
+        width: 40%;
+      }
+
+      p {
+        text-align: center;
+        padding:5%;
+        width: 100%;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+
+
+/* footer signiture */
+
+footer {
+  // position: absolute;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #F7F7F7;
+  h1 {
+    color: #b3aeb5;
+    font-size: 9px;
+  }
+}
+
+.container-footer {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.signiture {
+  font-size: 11px;
+  margin-top: 70px;
+  text-align: center;
+  span{
+    color: #B7B7B7;
+  }
+  a{
+    color:  inherit;
+  }
+}

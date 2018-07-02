@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  color: #666666;
+  font-family: 'Futura';
+  background-color: #F5F5F5;
+}
+
+a {
+  text-decoration: none;
+  color: #F2B13E;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1500px;
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+/* about mainpage --------------------------------- */
+
+div.container-outer{
+  margin-top: 200px;
+  position: relative;
+}
+
+div.container-inner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+}
+
+/* about header --------------------------------- */
+
+.header-div {
+  height: 65px;
+  width: 100%;
+  background-color: #373B3F;
+  position :fixed;
+  top: 0;
+}
+
+.header-left a{
+  line-height: 65px;
+  padding: 0 25px;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  color: inherit;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+a.header-link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.header-left {
+  float: left;
+  width: 50%;
+  color: white;
+}
+
+.header-right a{
+  line-height: 65px;
+  padding: 0 25px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  display: block;
+  float: right;
+  transition: all 0.5s;
+}
+
+/* about footer ================================ */
+
+.footer-div {
+  height: 35px;
+  width: 100%;
+  background-color: #373B3F;
+  position :fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+.footer-div a{
+  color: #fff;
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 35px;
+}
+
+
+.page {
+  margin: 2em auto;
+  width: 35em;
+  border: 5px solid #ccc;
+  padding: 0.8em;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.users li {
+  margin: 0.8em 1.2em;
+}
+
+.add-user {
+  font-size: 0.9em;
+  border-top: 2px solid #eee;
+  padding: 0.5em;
+}
+
+.show-user dt {
+  float: left;
+  font-weight: bold;
+}
+
+.show-user dd {
+  margin-left: 100px;
+}
+
+/* ユーザ削除ボタン用のスタイルを追加 */
+.del-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.del-form input {
+  color: white;
+  background-color: red;
+}
